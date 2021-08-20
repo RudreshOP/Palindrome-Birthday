@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome Birthday</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="nav">
+        <p>Palindrome Birthday</p>
+    </nav>
+    <header>
+        <h1>
+            Palindrome Birthday
+        </h1>
+    </header>
+    <main>
+        <section>
+            <article>
+                <label for="bday">Enter your date of birth</label>
+                <input type="date" id="bday" />
+
+                <button id="check">Check</button>
+
+                <div id="warn">Please enter correct date!</div>
+
+                <div class="output">
+
+                    <div class="wait" id="waiting">
+                        <img style="height: 150px; width: 150px;" src="loading.gif" alt="/">
+                        <div>Processing......</div>
+                    </div>
+
+                    <div id="result">
+                        <img src="yes-baby.gif" alt="/" id="img-yay" style="display: none;">
+                        <img src="nope.gif" alt="/" id="img-nah" style="display: none;">
+
+                        <div id="div-yay" style="display: none;">Yay! You were born on a Palindrome birthday!</div>
+
+                        <div id="div-nah" style="display: none;">Nah! Your birthday is not Palindrome. You missed it by
+                            <span id="span-days">x</span> days.</div>
+                    </div>
+                </div>
+
+            </article>
+        </section>
+    </main>
+
+        <footer class="footer">
+            <p>Social Links</p>
+            <ul class="social-links unordered">
+              <li class="list-inline">
+                <a class="link" href="https://github.com/RudreshOP">
+                  github
+                </a>
+              </li>
+              <li class="list-inline">
+                <a class="link" href="https://twitter.com/ParadkarRudresh">
+                  twitter
+                </a>
+              </li>
+              <li class="list-inline">
+                <a class="link" href="https://www.linkedin.com/in/rudresh-paradkar">
+                  linkedln
+                </a>
+              </li>
+            </ul>
+          </footer>
+    </div>
+</body>
+<script src="./index.js"></script>
+</html>
